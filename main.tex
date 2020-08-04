@@ -1,0 +1,481 @@
+\documentclass[a4paper,landscape]{article}
+
+\usepackage{etoc}
+\usepackage{chordbox}
+\usepackage{guitarchordschemes}
+
+\usepackage{geometry} % ??????? ?????? ???????? ????
+\geometry{top=10mm}
+\geometry{bottom=15mm}
+\geometry{left=10mm}
+\geometry{right=10mm}
+
+\setchordscheme{x-unit=.5cm}
+\setchordscheme{y-unit=.5cm}
+\setchordscheme{scales-frets=5}
+
+\setfingering{major scale 1}{
+	       2/1:1,        4/1:3, 
+	       2/2:1, 3/2:2,        5/2:4,
+	1/3:1,               4/3:4,
+	       2/4:1,        4/4:4,
+	       2/5:1,        4/5:3, 5/5:4,
+	       2/6:1,        4/6:3
+}{2/3:2, 5/1:4, 5/6:4}
+
+\setfingering{major scale 2}{
+	1/1:1,               4/1:4,
+	       2/2:2,        4/2:4,
+	1/3:1,        3/3:3, 4/3:4,
+	1/4:1,        3/4:3, 
+	1/5:1, 2/5:2,        4/5:4,
+	1/6:1,               4/6:4
+}{4/4:4, 2/1:2, 2/6:2}
+
+\setfingering{major scale 3}{
+	       2/1:1,        4/1:3, 5/1:4,
+	       2/2:1,        4/2:3, 
+	1/3:1, 2/3:2,        4/3:4,
+	1/4:1,               4/4:4,
+	       2/5:1,        4/5:4,
+	       2/6:1,        4/6:3, 5/6:4
+}{2/4:2, 5/2:4}
+
+\setfingering{major scale 4}{
+	1/1:1, 2/1:2,        4/1:4,
+	1/2:1,               4/2:4,
+	1/3:1,        3/3:3,
+	1/4:1,        3/4:3, 4/4:4,
+	1/5:1,        3/5:3, 
+	1/6:1, 2/6:2,        4/6:4
+}{4/5:4, 2/2:2}
+
+\setfingering{major scale 5}{
+	2/1:1,        4/1:3,
+	2/2:1,        4/2:3, 5/2:4,
+	1/3:1,        3/3:3,
+	1/4:1, 2/4:2,        4/4:4,
+	1/5:1,               4/5:4,
+	2/6:2,        4/6:4
+}{2/5:2, 4/3:4}
+
+\setfingering{major pent 1}{
+	       2/1:1,
+	       2/2:1,               5/2:4,
+                         4/3:4,
+	       2/4:1,        4/4:4,
+	       2/5:1,        4/5:3,
+	       2/6:1
+}{2/3:2, 5/1:4, 5/6:4}
+
+\setfingering{major pent 2}{
+	                     4/1:4,
+	       2/2:2,        4/2:4,
+	1/3:1,        3/3:3,
+	1/4:1, 
+	1/5:1,               4/5:4,
+	                     4/6:4
+}{4/4:4, 2/1:2, 2/6:2}
+
+\setfingering{major pent 3}{
+	       2/1:1,        4/1:3,
+   	       2/2:1,
+	1/3:1,               4/3:4,
+	                     4/4:4,
+	       2/5:1,        4/5:4,
+	       2/6:1,        4/6:3
+}{2/4:1, 5/2:4}
+
+\setfingering{major pent 4}{
+	1/1:1,               4/1:4,
+	                     4/2:4,
+	1/3:1,        3/3:3,
+	1/4:1,        3/4:3,
+	1/5:1,
+	1/6:1,               4/6:4
+}{4/5:4, 2/2:2}
+
+\setfingering{major pent 5}{
+	       2/1:1,        4/1:3,
+	       2/2:1,        4/2:3,
+	1/3:1,
+	1/4:1,               4/4:4,
+                         4/5:4,
+	       2/6:2,        4/6:4
+}{2/5:2, 4/3:4}
+
+\setfingering{minor scale 1}{
+	                     4/1:3, 5/1:4,  
+	       2/2:1, 3/2:2,        5/2:4,
+	1/3:1, 2/3:2,        4/3:4,
+	       2/4:1,
+	       2/5:1,        4/5:3, 5/5:4,
+	                     4/6:3, 5/6:4
+}{2/6:1, 4/4:4, 2/1:1}
+
+\setfingering{minor scale 2}{
+	1/1:1, 2/1:2,        4/1:4,
+	       2/2:2,
+	1/3:1,        3/3:3, 4/3:4,
+	              3/4:3, 4/4:4,
+	1/5:1, 2/5:2,        4/5:4,
+	1/6:1, 2/6:2,        4/6:4
+}{1/4:1, 4/2:4}
+
+\setfingering{minor scale 3}{
+	       2/1:1,        4/1:3, 5/1:4,
+	                     4/2:3, 5/2:4,
+	1/3:1, 2/3:2,        4/3:4,
+	1/4:1, 2/4:2,        4/4:4,
+	       2/5:1,        
+	       2/6:1,        4/6:3, 5/6:4
+}{4/5:4, 2/2:1}
+
+\setfingering{minor scale 4}{
+	1/1:1, 2/1:2,        4/1:4,
+	1/2:1, 2/2:2,        4/2:4,
+	1/3:1,
+	1/4:1,        3/4:3, 4/4:4,
+	              3/5:3, 4/5:4,
+	1/6:1, 2/6:2,        4/6:4
+}{1/5:1, 3/3:3}
+
+\setfingering{minor scale 5}{
+	       2/1:1,
+	       2/2:1,        4/2:3, 5/2:4,
+	              3/3:3, 4/3:4,
+	1/4:1, 2/4:2,        4/4:4,
+	1/5:1, 2/5:2,        4/5:4,
+	       2/6:2
+}{4/6:4, 1/3:1, 4/1:3}
+
+\setfingering{minor pent 1}{
+	                            5/1:4,  
+	       2/2:1,               5/2:4,
+	       2/3:1,        4/3:3,
+	       2/4:1,
+           2/5:1,        4/5:3,
+	                            5/6:4
+}{2/6:1, 4/4:3, 2/1:1}
+
+\setfingering{minor pent 2}{
+	       2/1:2,        4/1:4,
+	       2/2:2,
+	1/3:1,        3/3:3,
+	                     4/4:4,
+	1/5:1,               4/5:4,
+	       2/6:2,        4/6:4
+}{1/4:1, 4/2:4}
+
+\setfingering{minor pent 3}{
+	       2/1:1,        4/1:3,
+	                            5/2:4,
+	1/3:1,               4/3:4,
+	       2/4:1,        4/4:4,
+	       2/5:1,        
+	       2/6:1,        4/6:3
+}{4/5:3, 2/2:1}
+
+\setfingering{minor pent 4}{
+	1/1:1,               4/1:4,
+	       2/2:2,        4/2:4,
+	1/3:1,
+	1/4:1,        3/4:3, 
+	                     4/5:4,
+	1/6:1,               4/6:4
+}{1/5:1, 3/3:3}
+
+\setfingering{minor pent 5}{
+	       2/1:1,
+	       2/2:1,        4/2:3,
+	                     4/3:4,
+	1/4:1,               4/4:4,
+	       2/5:2,        4/5:4,
+	       2/6:2
+}{4/6:4, 1/3:1, 4/1:3}
+
+\begin{document}
+
+\tableofcontents
+
+\pagebreak
+
+\section{Major}
+\localtableofcontents
+
+\pagebreak
+
+\subsection{Basic info}
+\paragraph{Scale formula: W-W-H-W-W-W-H}
+
+\paragraph{Chords}
+I~ii~iii~IV~V~vi~(VII$^\circ$)
+
+\pagebreak
+
+\subsection{C}
+
+\paragraph{Scale: C~D~E~F~G~A~B}
+
+\begin{center}
+\begin{tabular}{ccccc}
+	\scales[fingering=major scale 5, position=II]  &
+	\scales[fingering=major scale 1, position=IV]  &
+	\scales[fingering=major scale 2, position=VII] &
+	\scales[fingering=major scale 3, position=IX]  &
+	\scales[fingering=major scale 4, position=XII]
+\end{tabular}
+\end{center}
+
+\paragraph{Pentatonic: C~D~E~G~A}
+
+\begin{center}
+\begin{tabular}{ccccc}
+	\scales[fingering=major pent 5, position=II]  &
+	\scales[fingering=major pent 1, position=IV]  &
+	\scales[fingering=major pent 2, position=VII] &
+	\scales[fingering=major pent 3, position=IX]  &
+	\scales[fingering=major pent 4,	position=XII]	
+\end{tabular}
+\end{center}
+
+\paragraph{Chord: C E G}
+
+\paragraph{First form of chords in C}
+\begin{center}
+	\begin{tabular}{cccccc}
+		\chordbox{C~-~I}{x,3,2,0,1,0}      &
+		\chordbox{Dm~-~ii}{x,x,0,2,3,1}	   &
+		\chordbox{Em~-~iii}{0,2,2,1,0,0}   &
+		\bchordbox{F~-~IV}{1,3,3,2,1,1}{1} &
+		\chordbox{G~-~V}{3,2,0,0,0,3}      &
+		\chordbox{Am~-~vi}{x,0,2,2,1,0} 
+		
+	\end{tabular}
+\end{center}
+\pagebreak
+
+\subsection{C$\sharp$/D$\flat$}
+
+\paragraph{Scale: C$\sharp$~D$\sharp$~F~F$\sharp$~G$\sharp$~A$\sharp$~C / D$\flat$~E$\flat$~F~G$\flat$~A$\flat$~B$\flat$~C}
+
+\begin{center}
+	\begin{tabular}{ccccc}
+		\scales[fingering=major scale 4, position=I]    &
+		\scales[fingering=major scale 5, position=III]  &
+		\scales[fingering=major scale 1, position=V]    &
+		\scales[fingering=major scale 2, position=VIII] &
+		\scales[fingering=major scale 3, position=X]
+	\end{tabular}
+\end{center}
+
+\paragraph{Pentatonic: C$\sharp$~D$\sharp$~F~G$\sharp$~A$\sharp$ / D$\flat$~E$\flat$~F~A$\flat$~B$\flat$}
+
+\begin{center}
+	\begin{tabular}{ccccc}
+		\scales[fingering=major pent 4, position=I]  &
+		\scales[fingering=major pent 5, position=III]  &
+		\scales[fingering=major pent 1, position=V] &
+		\scales[fingering=major pent 2, position=VIII]  &
+		\scales[fingering=major pent 3,	position=X]	
+	\end{tabular}
+\end{center}
+
+\paragraph{Chord: C$\sharp$ F G$\sharp$}
+
+\paragraph{First form of chords in C}
+\begin{center}
+	\begin{tabular}{cccccc}
+		\bchordbox[4]{C\sharp~-~I}{x,4,6,6,6,4}{4}    &
+		\bchordbox[6]{D\sharp m~-~ii}{x,6,8,8,7,6}{6} &
+		\bchordbox{Fm~-~iii}{1,3,3,1,1,1}{1}          &
+		\bchordbox[2]{F\sharp ~-~IV}{2,4,4,3,2,2}{2}  &
+		\bchordbox[4]{G\sharp~-~V}{4,6,6,5,4,4}{4}    &
+		\bchordbox[6]{A\sharp m~-~vi}{6,8,8,6,6,6}{6} 
+		
+	\end{tabular}
+\end{center}
+\pagebreak
+
+\subsection{D}
+
+\paragraph{Scale: D~E~F$\sharp$~G~A~B~C$\sharp$}
+
+\begin{center}
+	\begin{tabular}{ccccc}
+		\scales[fingering=major scale 4, position=II]  &
+		\scales[fingering=major scale 5, position=IV]  &
+		\scales[fingering=major scale 1, position=VI]  &
+		\scales[fingering=major scale 2, position=IX]  &
+		\scales[fingering=major scale 3, position=XII]
+	\end{tabular}
+\end{center}
+
+\paragraph{Pentatonic: D~E~F$\sharp$~A~B}
+
+\begin{center}
+	\begin{tabular}{ccccc}
+		\scales[fingering=major pent 4, position=II]  &
+		\scales[fingering=major pent 5, position=IV]  &
+		\scales[fingering=major pent 1, position=VI]  &
+		\scales[fingering=major pent 2, position=IX]  &
+		\scales[fingering=major pent 3,	position=XII]	
+	\end{tabular}
+\end{center}
+
+\paragraph{Chord: D F$\sharp$ A}
+
+\paragraph{First form of chords in D}
+\begin{center}
+	\begin{tabular}{cccccc}
+		\chordbox{D~-~I}{x,x,0,2,3,2}                  &
+		\chordbox{Em~-~ii}{0,3,3,2,0,0}	               &
+		\bchordbox[2]{F\sharp m~-~iii}{2,4,4,2,2,2}{2} &
+		\chordbox{G~-~IV}{3,2,0,0,0,3}                 &
+		\chordbox{A~-~V}{x,0,2,2,2,0}                  &
+		\bchordbox[2]{Bm~-~vi}{x,2,4,4,3,2}{2}
+		
+	\end{tabular}
+\end{center}
+
+
+\pagebreak
+
+\section{Minor}
+\localtableofcontents
+
+\pagebreak
+
+\subsection{Basic info}
+\paragraph{Scale formula: W-H-W-W-H-W-W}
+
+\paragraph{Chords}
+i~(ii$^\circ$)~III~iv~v~VI~VII
+
+\pagebreak
+
+\subsection{Em}
+
+\paragraph{Scale: E~F$\sharp$~G~A~B~C~D}
+\begin{center}
+\begin{tabular}{ccccc}
+	\scales[fingering=minor scale 2, position=II]  &
+	\scales[fingering=minor scale 3, position=IV]  &
+	\scales[fingering=minor scale 4, position=VII] &
+	\scales[fingering=minor scale 5, position=IX]  &
+	\scales[fingering=minor scale 1, position=XI]
+
+\end{tabular}
+\end{center}
+
+\paragraph{Pentatonic: E~G~A~B~D}
+\begin{center}
+\begin{tabular}{ccccc}
+    \scales[fingering=minor pent 2, position=II]  &
+	\scales[fingering=minor pent 3, position=IV]  &
+	\scales[fingering=minor pent 4, position=VII] &
+	\scales[fingering=minor pent 5, position=IX]  &
+	\scales[fingering=minor pent 1, position=XI]
+\end{tabular}
+\end{center}
+
+
+\paragraph{Chord: E G B}
+
+\paragraph{First form of chords in Em}
+\begin{center}
+	\begin{tabular}{cccccc}
+		\chordbox{Em~-~i}{0,2,2,0,0,0}        &
+		\chordbox{G~-~III}{3,2,0,0,0,3}       &
+		\chordbox{Am~-~iv}{x,0,2,2,1,0}       &
+		\bchordbox[2]{Bm~-~v}{x,2,4,4,3,2}{2} &
+		\chordbox{C~-~VI}{x,3,2,0,1,0}        &
+		\chordbox{D~-~VII}{x,x,0,2,3,2}	  
+	\end{tabular}
+\end{center}
+
+\pagebreak
+
+\subsection{Am}
+
+\paragraph{Scale: A~B~C~D~E~F~G}
+\begin{center}
+	\begin{tabular}{ccccc}
+		\scales[fingering=minor scale 5, position=II]  &
+		\scales[fingering=minor scale 1, position=IV]  &
+		\scales[fingering=minor scale 2, position=VII] &
+		\scales[fingering=minor scale 3, position=IX]  &
+		\scales[fingering=minor scale 4, position=XII]
+		
+	\end{tabular}
+\end{center}
+
+\paragraph{Pentatonic: A~C~D~E~G}
+\begin{center}
+	\begin{tabular}{ccccc}
+		\scales[fingering=minor pent 5, position=II]  &
+		\scales[fingering=minor pent 1, position=IV]  &
+		\scales[fingering=minor pent 2, position=VII] &
+		\scales[fingering=minor pent 3, position=IX]  &
+		\scales[fingering=minor pent 4, position=XII]
+	\end{tabular}
+\end{center}
+
+
+\paragraph{Chord: A C E}
+
+\paragraph{First form of chords in Em}
+\begin{center}
+	\begin{tabular}{cccccc}
+		\chordbox{Am~-~i}{x,0,2,2,1,0}     &
+		\chordbox{C~-~III}{x,3,2,0,1,0}    &
+		\chordbox{Dm~-~iv}{x,x,0,2,3,2}	   &
+		\chordbox{Em~-~v}{0,2,2,0,0,0}     &
+		\bchordbox{F~-~VI}{1,3,3,2,1,1}{1} &
+		\chordbox{G~-~VII}{3,2,0,0,0,3} 
+		
+		
+	\end{tabular}
+\end{center}
+
+\pagebreak
+
+\chordbox{B\flat m}{x,x,x,3,2,1} 
+
+%
+\chordbox{F\sharp^{maj7}}{2,x,3,3,2,x}
+
+
+
+%
+\pgfkeys{/chordbox/text on node=pitch}
+\tikzset{chordbox/.append style={scale=2.5}}
+\chordbox{D}{x,x,0,2:1,3:3,2:2}
+
+%
+\pgfkeys{/chordbox/.cd,text on node=fingering,text below=pitch}
+\chordbox{D}{x,x,0,2:1,3:3,2:2}
+
+%
+\pgfkeys{/chordbox/.cd, text on node=none, text below=none}
+\tikzset{chordbox/.append style={scale=0.4}}
+\bchordbox{F}{1,3,3,2,,1}{1}
+
+%
+
+\chordscheme[
+fret-number = 5,
+name = Am,
+position = V,
+root = {1/6:1, 1/1:1, 3/4:3},
+finger = {%
+	1/5:1, 1/4:1,1/3:1, 1/2:1,%
+	3/5:3, 3/3:3,%
+	4/6:4, 4/2:4, 4/1:4%
+}
+]
+
+\pagebreak
+
+
+\end{document}
