@@ -5,7 +5,7 @@
 \usepackage{guitarchordschemes}
 
 \usepackage{geometry} % ??????? ?????? ???????? ????
-\geometry{top=10mm}
+\geometry{top=20mm}
 \geometry{bottom=15mm}
 \geometry{left=10mm}
 \geometry{right=10mm}
@@ -13,6 +13,7 @@
 \setchordscheme{x-unit=.5cm}
 \setchordscheme{y-unit=.5cm}
 \setchordscheme{scales-frets=5}
+\setchordscheme{finger-radius=0.3}
 
 \setfingering{major scale 1}{
 	       2/1:1,        4/1:3, 
@@ -195,7 +196,6 @@
 }{4/6:4, 1/3:1, 4/1:3}
 
 \begin{document}
-
 \tableofcontents
 
 \pagebreak
@@ -210,7 +210,6 @@
 
 \paragraph{Chords}
 I~ii~iii~IV~V~vi~(VII$^\circ$)
-
 \pagebreak
 
 \subsection{C}
@@ -241,7 +240,7 @@ I~ii~iii~IV~V~vi~(VII$^\circ$)
 
 \paragraph{Chord: C E G}
 
-\paragraph{First form of chords in C}
+\paragraph{Sample forms of chords in C}
 \begin{center}
 	\begin{tabular}{cccccc}
 		\chordbox{C~-~I}{x,3,2,0,1,0}      &
@@ -281,9 +280,9 @@ I~ii~iii~IV~V~vi~(VII$^\circ$)
 	\end{tabular}
 \end{center}
 
-\paragraph{Chord: C$\sharp$ F G$\sharp$}
+\paragraph{Chord: C$\sharp$ F G$\sharp$ / D$\flat$ F A$\flat$}
 
-\paragraph{First form of chords in C}
+\paragraph{Sample forms of chords in C$\sharp$/D$\flat$}
 \begin{center}
 	\begin{tabular}{cccccc}
 		\bchordbox[4]{C\sharp~-~I}{x,4,6,6,6,4}{4}    &
@@ -325,11 +324,11 @@ I~ii~iii~IV~V~vi~(VII$^\circ$)
 
 \paragraph{Chord: D F$\sharp$ A}
 
-\paragraph{First form of chords in D}
+\paragraph{Sample forms of chords in D}
 \begin{center}
 	\begin{tabular}{cccccc}
 		\chordbox{D~-~I}{x,x,0,2,3,2}                  &
-		\chordbox{Em~-~ii}{0,3,3,2,0,0}	               &
+		\chordbox{Em~-~ii}{0,2,2,0,0,0}	               &
 		\bchordbox[2]{F\sharp m~-~iii}{2,4,4,2,2,2}{2} &
 		\chordbox{G~-~IV}{3,2,0,0,0,3}                 &
 		\chordbox{A~-~V}{x,0,2,2,2,0}                  &
@@ -337,8 +336,388 @@ I~ii~iii~IV~V~vi~(VII$^\circ$)
 		
 	\end{tabular}
 \end{center}
+\pagebreak
+
+\subsection{D$\sharp$/E$\flat$}
+
+\paragraph{Scale: D$\sharp$~F~G~G$\sharp$~A$\sharp$~C~D / E$\flat$~F~G~A$\flat$~B$\flat$~C~D}
+
+\begin{center}
+	\begin{tabular}{ccccc}
+		\scales[fingering=major scale 4, position=III] &
+		\scales[fingering=major scale 5, position=V]   &
+		\scales[fingering=major scale 1, position=VII] &
+		\scales[fingering=major scale 2, position=X]   &
+		\scales[fingering=major scale 3, position=XII]
+	\end{tabular}
+\end{center}
+
+\paragraph{Pentatonic: D$\sharp$~F~G~A$\sharp$~C / E$\flat$~F~G~B$\flat$~C}
+
+\begin{center}
+	\begin{tabular}{ccccc}
+		\scales[fingering=major pent 4, position=III] &
+		\scales[fingering=major pent 5, position=V]   &
+		\scales[fingering=major pent 1, position=VII] &
+		\scales[fingering=major pent 2, position=X]   &
+		\scales[fingering=major pent 3,	position=XII]	
+	\end{tabular}
+\end{center}
+
+\paragraph{Chord: D$\sharp$ G A$\sharp$ / E$\flat$ G B$\flat$}
+
+\paragraph{Sample forms of chords in D$\sharp$/E$\flat$}
+\begin{center}
+	\begin{tabular}{cccccc}
+		\bchordbox[6]{D\sharp~-~I}{x,6,8,8,8,6}{6}  &
+		\bchordbox{Fm~-~ii}{1,3,3,1,1,1}{1}	        &
+		\bchordbox[3]{Gm~-~iii}{3,5,5,3,3,3}{3}     &
+		\bchordbox[4]{G\sharp~-~IV}{4,6,6,5,4,4}{4} &
+		\bchordbox[6]{A\sharp~-~V}{6,8,8,7,6,6}{6}  &
+		\bchordbox[3]{Cm~-~vi}{x,3,5,5,4,3}{3}
+		
+	\end{tabular}
+\end{center}
+\pagebreak
+
+\subsection{E}
+
+\paragraph{Scale: E~F$\sharp$~G$\sharp$~A~B~C$\sharp$~D$\sharp$}
+
+\begin{center}
+	\begin{tabular}{ccccc}
+		\scales[fingering=major scale 3, position=I]  &
+		\scales[fingering=major scale 4, position=IV]  &
+		\scales[fingering=major scale 5, position=VI]  &
+		\scales[fingering=major scale 1, position=VIII]  &
+		\scales[fingering=major scale 2, position=XI]
+	\end{tabular}
+\end{center}
+
+\paragraph{Pentatonic: E~F$\sharp$~G$\sharp$~B~C$\sharp$}
+
+\begin{center}
+	\begin{tabular}{ccccc}
+		\scales[fingering=major pent 3, position=I]  &
+		\scales[fingering=major pent 4, position=IV]  &
+		\scales[fingering=major pent 5, position=VI]  &
+		\scales[fingering=major pent 1, position=VIII]  &
+		\scales[fingering=major pent 2,	position=XI]	
+	\end{tabular}
+\end{center}
+
+\paragraph{Chord: E~G$\sharp$~B}
+
+\paragraph{Sample forms of chords in E}
+\begin{center}
+	\begin{tabular}{cccccc}
+		\bchordbox[7]{E~-~I}{x,7,9,9,9,7}{7}            &
+		\bchordbox[8]{F\sharp m~-~ii}{x,8,10,10,9,8}{8} &
+		\bchordbox[4]{G\sharp m~-~iii}{4,6,6,4,4,4}{4}  &
+		\bchordbox[5]{A~-~IV}{5,7,7,5,5,5}{5}           &
+		\bchordbox[7]{B~-~V}{7,9,9,8,7,7}{7}            &
+		\bchordbox[4]{C\sharp m~-~vi}{x,4,6,6,5,4}{4}
+		
+	\end{tabular}
+\end{center}
+\pagebreak
+
+\subsection{F}
+
+\paragraph{Scale: F~G~A~B$\flat$~C~D~E}
+
+\begin{center}
+	\begin{tabular}{ccccc}
+		\scales[fingering=major scale 3, position=II]  &
+		\scales[fingering=major scale 4, position=V]   &
+		\scales[fingering=major scale 5, position=VII] &
+		\scales[fingering=major scale 1, position=IX]  &
+		\scales[fingering=major scale 2, position=XII]
+	\end{tabular}
+\end{center}
+
+\paragraph{Pentatonic: F~G~A~C~D}
+
+\begin{center}
+	\begin{tabular}{ccccc}
+		\scales[fingering=major pent 3, position=II]  &
+		\scales[fingering=major pent 4, position=V]   &
+		\scales[fingering=major pent 5, position=VII] &
+		\scales[fingering=major pent 1, position=IX]  &
+		\scales[fingering=major pent 2,	position=XII]	
+	\end{tabular}
+\end{center}
+
+\paragraph{Chord: F~A~C}
+
+\paragraph{Sample forms of chords in F}
+\begin{center}
+	\begin{tabular}{cccccc}
+		\bchordbox{F~-~I}{1,3,3,2,1,1}{1}       &
+		\bchordbox[3]{Gm~-~ii}{3,5,5,3,3,3}{3}  &
+		\chordbox{Am~-~iii}{x,0,2,2,1,0}        &
+		\bchordbox{B\flat~-~IV}{x,1,3,3,3,1}{1} &
+		\chordbox{C~-~V}{x,3,2,0,1,0}           &
+		\chordbox{Dm~-~vi}{x,x,0,2,3,1}
+		
+	\end{tabular}
+\end{center}
+\pagebreak
+
+\subsection{F$\sharp$/G$\flat$}
+
+\paragraph{Scale: F$\sharp$~G$\sharp$~A$\sharp$~B~C$\sharp$~D$\sharp$~E$\sharp$}
+
+\begin{center}
+	\begin{tabular}{ccccc}
+		\scales[fingering=major scale 2, position=I]    &
+		\scales[fingering=major scale 3, position=III]  &
+		\scales[fingering=major scale 4, position=VI]   &
+		\scales[fingering=major scale 5, position=VIII] &
+		\scales[fingering=major scale 1, position=X]
+	\end{tabular}
+\end{center}
+
+\paragraph{Pentatonic: F$\sharp$~G$\sharp$~A$\sharp$~C$\sharp$~D$\sharp$}
+
+\begin{center}
+	\begin{tabular}{ccccc}
+		\scales[fingering=major pent 2, position=I]    &
+		\scales[fingering=major pent 3, position=III]  &
+		\scales[fingering=major pent 4, position=VI]   &
+		\scales[fingering=major pent 5, position=VIII] &
+		\scales[fingering=major pent 1,	position=X]	
+	\end{tabular}
+\end{center}
+
+\paragraph{Chord: F$\sharp$~A$\sharp$~C$\sharp$}
+
+\paragraph{Sample forms of chords in F$\sharp$/G$\flat$}
+\begin{center}
+	\begin{tabular}{cccccc}
+		\bchordbox[2]{F\sharp~-~I}{2,4,4,3,2,2}{2}     &
+		\bchordbox[4]{G\sharp m~-~ii}{4,6,6,4,4,4}{4}  &
+		\bchordbox[6]{A\sharp m~-~iii}{6,8,8,6,6,6}{6} &
+		\bchordbox[2]{B~-~IV}{x,2,4,4,4,2}{2}          &
+		\bchordbox[4]{C\sharp~-~V}{x,4,6,6,6,4}{4}     &
+		\bchordbox[6]{D\sharp m~-~vi}{x,6,8,8,7,6}{6}
+		
+	\end{tabular}
+\end{center}
+\pagebreak
+
+\subsection{G}
+
+\paragraph{Scale: G~A~B~C~D~E~F$\sharp$}
+
+\begin{center}
+	\begin{tabular}{ccccc}
+		\scales[fingering=major scale 2, position=II]  &
+		\scales[fingering=major scale 3, position=IV]  &
+		\scales[fingering=major scale 4, position=VII] &
+		\scales[fingering=major scale 5, position=IX]  &
+		\scales[fingering=major scale 1, position=XI]
+	\end{tabular}
+\end{center}
+
+\paragraph{Pentatonic: G~A~B~D~E}
+
+\begin{center}
+	\begin{tabular}{ccccc}
+		\scales[fingering=major pent 2, position=II]  &
+		\scales[fingering=major pent 3, position=IV]  &
+		\scales[fingering=major pent 4, position=VII] &
+		\scales[fingering=major pent 5, position=IX]  &
+		\scales[fingering=major pent 1,	position=XI]	
+	\end{tabular}
+\end{center}
+
+\paragraph{Chord: G~B~E}
+
+\paragraph{Sample forms of chords in G}
+\begin{center}
+	\begin{tabular}{cccccc}
+		\chordbox{G~-~I}{3,2,0,0,0,3}           &
+		\chordbox{Am~-~ii}{x,0,2,2,1,0}         &
+		\bchordbox[2]{Bm~-~iii}{x,2,4,4,3,2}{2} &
+		\chordbox{C~-~IV}{x,3,2,0,1,0}          &
+		\chordbox{D~-~V}{x,x,0,2,3,2}           &
+		\chordbox{Em~-~vi}{0,2,2,1,0,0}
+		
+	\end{tabular}
+\end{center}
+\pagebreak
 
 
+\subsection{G$\sharp$/A$\flat$}
+
+\paragraph{Scale: A$\flat$~B$\flat$~C~D$\flat$~E$\flat$~F~G/G$\sharp$~A$\sharp$~C~C$\sharp$~D$\sharp$~E$\sharp$~G}
+
+\begin{center}
+	\begin{tabular}{ccccc}
+		\scales[fingering=major scale 2, position=III]  &
+		\scales[fingering=major scale 3, position=V]    &
+		\scales[fingering=major scale 4, position=VIII] &
+		\scales[fingering=major scale 5, position=X]    &
+		\scales[fingering=major scale 1, position=XII]
+	\end{tabular}
+\end{center}
+
+\paragraph{Pentatonic: A$\flat$~B$\flat$~C~E$\flat$~F/G$\sharp$~A$\sharp$~C~D$\sharp$~E$\sharp$}
+
+\begin{center}
+	\begin{tabular}{ccccc}
+		\scales[fingering=major pent 2, position=III]  &
+		\scales[fingering=major pent 3, position=V]    &
+		\scales[fingering=major pent 4, position=VIII] &
+		\scales[fingering=major pent 5, position=X]    &
+		\scales[fingering=major pent 1,	position=XII]	
+	\end{tabular}
+\end{center}
+
+\paragraph{Chord: G$\sharp$~C~D$\sharp$/A$\flat$~C~E$\flat$}
+
+\paragraph{Sample forms of chords in G$\sharp$/A$\flat$}
+\begin{center}
+	\begin{tabular}{cccccc}
+		\bchordbox[4]{G\sharp~-~I}{4,6,6,5,4,4}{4}    &
+		\bchordbox[4]{A\sharp m~-~ii}{x,4,6,6,5,4}{4} &
+		\bchordbox[3]{Cm~-~iii}{x,3,5,5,4,3}{3}       &
+		\bchordbox[4]{C\sharp~-~IV}{x,4,6,6,6,4}{4}   &
+		\bchordbox[6]{D\sharp~-~V}{x,6,8,8,8,6}{6}    &
+		\bchordbox{Fm(E\sharp m)~-~vi}{1,3,3,1,1,1}{1}
+		
+	\end{tabular}
+\end{center}
+\pagebreak
+
+
+\subsection{A}
+
+\paragraph{Scale: A~B~C$\sharp$~D~E~F$\sharp$~G$\sharp$}
+
+\begin{center}
+	\begin{tabular}{ccccc}
+		\scales[fingering=major scale 1, position=I]  &
+		\scales[fingering=major scale 2, position=IV] &
+		\scales[fingering=major scale 3, position=VI] &
+		\scales[fingering=major scale 4, position=IX] &
+		\scales[fingering=major scale 5, position=XI]
+	\end{tabular}
+\end{center}
+
+\paragraph{Pentatonic: A~B~C$\sharp$~E~F$\sharp$}
+
+\begin{center}
+	\begin{tabular}{ccccc}
+		\scales[fingering=major pent 1, position=I]  &
+		\scales[fingering=major pent 2, position=IV] &
+		\scales[fingering=major pent 3, position=VI] &
+		\scales[fingering=major pent 4, position=IX] &
+		\scales[fingering=major pent 5,	position=XI]	
+	\end{tabular}
+\end{center}
+
+\paragraph{Chord: A~C$\sharp$~E}
+
+\paragraph{Sample forms of chords in A}
+\begin{center}
+	\begin{tabular}{cccccc}
+		\bchordbox[5]{A~-~I}{5,7,7,6,5,5}{5}           &
+		\bchordbox[2]{Bm~-~ii}{x,2,4,4,3,2}{2}         &
+		\bchordbox[4]{C\sharp m~-~iii}{x,4,6,6,5,4}{4} &
+		\bchordbox[5]{D~-~IV}{x,5,7,7,7,5}{5}          &
+		\bchordbox[7]{E~-~V}{x,7,9,9,9,7}{7}           &
+		\bchordbox[2]{F\sharp m~-~vi}{2,4,4,2,2,2}{2}
+		
+	\end{tabular}
+\end{center}
+\pagebreak
+
+
+\subsection{A$\sharp$/B$\flat$}
+
+\paragraph{Scale: B$\flat$~C~D~E$\flat$~F~G~A/A$\sharp$~C~D~D$\sharp$~E$\sharp$~G~A}
+
+\begin{center}
+	\begin{tabular}{ccccc}
+		\scales[fingering=major scale 1, position=II]  &
+		\scales[fingering=major scale 2, position=V]   &
+		\scales[fingering=major scale 3, position=VII] &
+		\scales[fingering=major scale 4, position=X]   &
+		\scales[fingering=major scale 5, position=XII]
+	\end{tabular}
+\end{center}
+
+\paragraph{Pentatonic: B$\flat$~C~D~F~G/A$\sharp$~C~D~E$\sharp$~G}
+
+\begin{center}
+	\begin{tabular}{ccccc}
+		\scales[fingering=major pent 1, position=II]  &
+		\scales[fingering=major pent 2, position=IV]  &
+		\scales[fingering=major pent 3, position=VII] &
+		\scales[fingering=major pent 4, position=X]   &
+		\scales[fingering=major pent 5,	position=XII]	
+	\end{tabular}
+\end{center}
+
+\paragraph{Chord: B$\flat$~D~F/A$\sharp$~D~E$\sharp$}
+
+\paragraph{Sample forms of chords in A$\sharp$/B$\flat$}
+\begin{center}
+	\begin{tabular}{cccccc}
+		\bchordbox[6]{A\sharp~-~I}{6,8,8,7,6,6}{6}       &
+		\bchordbox[3]{Cm~-~ii}{x,3,5,5,4,3}{3}           &
+		\bchordbox[5]{Dm~-~iii}{x,5,7,7,6,5}{5}          &
+		\bchordbox[6]{D\sharp~-~IV}{x,6,8,8,8,6}{6}      &
+		\bchordbox[8]{F(E\sharp)~-~V}{x,8,10,10,10,8}{8} &
+		\bchordbox[3]{Gm~-~vi}{3,5,5,3,3,3}{3}
+		
+	\end{tabular}
+\end{center}
+\pagebreak
+
+
+\subsection{B}
+
+\paragraph{Scale: B~C$\sharp$~D$\sharp$~E~F$\sharp$~G$\sharp$~A$\sharp$}
+
+\begin{center}
+	\begin{tabular}{ccccc}
+		\scales[fingering=major scale 5, position=I]    &
+		\scales[fingering=major scale 1, position=III]  &
+		\scales[fingering=major scale 2, position=VI]   &
+		\scales[fingering=major scale 3, position=VIII] &
+		\scales[fingering=major scale 4, position=XI]
+	\end{tabular}
+\end{center}
+
+\paragraph{Pentatonic: B~C$\sharp$~D$\sharp$~F$\sharp$~G$\sharp$}
+
+\begin{center}
+	\begin{tabular}{ccccc}
+		\scales[fingering=major pent 5, position=I]    &
+		\scales[fingering=major pent 1, position=III]  &
+		\scales[fingering=major pent 2, position=VI]   &
+		\scales[fingering=major pent 3, position=VIII] &
+		\scales[fingering=major pent 4,	position=XI]	
+	\end{tabular}
+\end{center}
+
+\paragraph{Chord: B~D$\sharp$~F$\sharp$}
+
+\paragraph{Sample forms of chords in B}
+\begin{center}
+	\begin{tabular}{cccccc}
+		\bchordbox[7]{B~-~I}{7,9,9,8,7,7}{7}           &
+		\bchordbox[4]{C\sharp m~-~ii}{x,4,6,6,5,4}{4}  &
+		\bchordbox[6]{D\sharp m~-~iii}{x,6,8,8,7,6}{6} &
+		\bchordbox[7]{E~-~IV}{x,7,9,9,9,7}{7}          &
+		\bchordbox[9]{F\sharp~-~V}{x,9,11,11,11,9}{9}  &
+		\bchordbox[4]{G\sharp m~-~vi}{4,6,6,4,4,4}{4}
+		
+	\end{tabular}
+\end{center}
 \pagebreak
 
 \section{Minor}
@@ -382,7 +761,7 @@ i~(ii$^\circ$)~III~iv~v~VI~VII
 
 \paragraph{Chord: E G B}
 
-\paragraph{First form of chords in Em}
+\paragraph{Sample forms of chords in Em}
 \begin{center}
 	\begin{tabular}{cccccc}
 		\chordbox{Em~-~i}{0,2,2,0,0,0}        &
@@ -424,7 +803,7 @@ i~(ii$^\circ$)~III~iv~v~VI~VII
 
 \paragraph{Chord: A C E}
 
-\paragraph{First form of chords in Em}
+\paragraph{Sample forms of chords in Em}
 \begin{center}
 	\begin{tabular}{cccccc}
 		\chordbox{Am~-~i}{x,0,2,2,1,0}     &
@@ -438,44 +817,7 @@ i~(ii$^\circ$)~III~iv~v~VI~VII
 	\end{tabular}
 \end{center}
 
-\pagebreak
 
-\chordbox{B\flat m}{x,x,x,3,2,1} 
-
-%
-\chordbox{F\sharp^{maj7}}{2,x,3,3,2,x}
-
-
-
-%
-\pgfkeys{/chordbox/text on node=pitch}
-\tikzset{chordbox/.append style={scale=2.5}}
-\chordbox{D}{x,x,0,2:1,3:3,2:2}
-
-%
-\pgfkeys{/chordbox/.cd,text on node=fingering,text below=pitch}
-\chordbox{D}{x,x,0,2:1,3:3,2:2}
-
-%
-\pgfkeys{/chordbox/.cd, text on node=none, text below=none}
-\tikzset{chordbox/.append style={scale=0.4}}
-\bchordbox{F}{1,3,3,2,,1}{1}
-
-%
-
-\chordscheme[
-fret-number = 5,
-name = Am,
-position = V,
-root = {1/6:1, 1/1:1, 3/4:3},
-finger = {%
-	1/5:1, 1/4:1,1/3:1, 1/2:1,%
-	3/5:3, 3/3:3,%
-	4/6:4, 4/2:4, 4/1:4%
-}
-]
-
-\pagebreak
 
 
 \end{document}
