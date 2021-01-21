@@ -202,50 +202,108 @@
 
 \section{Intervals}
 
-\tikzset{chordbox/.append style={scale=1.5}}
+\tikzset{chordbox/.append style={scale=1.4}}
 \pgfkeys{/chordbox/.cd, numfrets=5}
 
-\begin{tabular}{ll}
-
-	\begin{tabular}{lcccc}
-		m2 & \chordbox{all~strings}{x,x,5,1,x,x} & 
-		     \chordbox{2nd~string}{x,x,x,4,1,x}  && \\
-		M2 & \chordbox{all~strings}{x,x,4,1,x,x} & 
-		     \chordbox{2nd~string}{x,x,x,3,1,x}  && \\
-		m3 & \chordbox{all~strings}{x,x,3,1,x,x} & 
-		     \chordbox{2nd~string}{x,x,x,2,1,x}  && \\
-		M3 & \chordbox{all~strings}{x,x,3,2,x,x} & 
-		     \chordbox{2nd~string}{x,x,x,3,3,x}  && \\
-		P4 & \chordbox{all~strings}{x,x,2,2,x,x} & 
-		     \chordbox{2nd~string}{x,x,x,2,3,x}  && \\
-		M7 & \chordbox{all~strings}{x,3,x,4,x,x} & 
-	         \chordbox{2nd~string}{x,x,2,x,4,x}  && \\
-	\end{tabular}
-	&
-	\begin{tabular}{lcccc}
-		b5 & \chordbox{all~strings}{x,x,2,3,x,x} & 
-		     \chordbox{2nd~string}{x,x,x,1,3,x}  &
-		     \chordbox{all~string}{x,5,x,1,x,x}  &
-		     \chordbox{2nd~string}{x,x,4,x,1,x}  \\
-		P5 & \chordbox{all~strings}{x,x,2,4,x,x} & 
-		     \chordbox{2nd~string}{x,x,x,1,4,x}  &
-		     \chordbox{all~string}{x,4,x,1,x,x}  &
-		     \chordbox{1,2nd~string}{x,x,x,3,x,1}  \\
-		aug5 & \chordbox{all~strings}{x,x,2,5,x,x} & 
-		       \chordbox{2nd~string}{x,x,x,1,5,x}  &
-		       \chordbox{all~string}{x,3,x,1,x,x}  &
-		       \chordbox{1,2nd~string}{x,x,x,2,x,1} \\
-		M6 & \chordbox{all~strings}{x,3,x,2,x,x} & 
-		     \chordbox{2nd~string}{x,x,3,x,3,x}  && \\
-		m7 & \chordbox{all~strings}{x,3,x,3,x,x} & 
-	         \chordbox{2nd~string}{x,x,3,x,4,x}  && \\
-		Octave & \chordbox{all~strings}{x,1,x,3,x,x} & 
-		         \chordbox{2nd~string}{x,x,1,x,4,x}  && \\
-	\end{tabular}
-
+\begin{tabular}{lccccccccc}
+	\textbf{m2} & 
+	\chordbox{}{5,1,x,x,x,x} & 
+	\chordbox{}{x,5,1,x,x,x} & 
+	\chordbox{}{x,x,5,1,x,x} & 
+	\chordbox{}{x,x,x,4,1,x} &
+	\chordbox{}{x,x,x,x,5,1} &&&& \\
+	\textbf{M2} & 
+	\chordbox{}{4,1,x,x,x,x} & 
+	\chordbox{}{x,4,1,x,x,x} &
+	\chordbox{}{x,x,4,1,x,x} &
+	\chordbox{}{x,x,x,4,2,x} &
+	\chordbox{}{x,x,x,x,4,1} &&&& \\
+	\textbf{m3} & 
+	\chordbox{}{4,2,x,x,x,x} & 
+	\chordbox{}{x,4,2,x,x,x} & 
+	\chordbox{}{x,x,4,2,x,x} & 
+	\chordbox{}{x,x,x,4,3,x} & 
+	\chordbox{}{x,x,x,x,4,2} &&&& \\
+	\textbf{M3} & 
+	\chordbox{}{3,2,x,x,x,x} & 
+	\chordbox{}{x,3,2,x,x,x} &
+	\chordbox{}{x,x,3,2,x,x} &
+	\chordbox{}{x,x,x,3,3,x} &
+	\chordbox{}{x,x,x,x,3,2} &&&& \\
+	\textbf{P4} & 
+	\chordbox{}{2,2,x,x,x,x} & 
+	\chordbox{}{x,2,2,x,x,x} & 
+	\chordbox{}{x,x,2,2,x,x} & 
+	\chordbox{}{x,x,x,2,3,x} & 
+	\chordbox{}{x,x,x,x,3,3} &&&& \\
+	\textbf{A4/d5} & 
+	\chordbox{}{2,3,x,x,x,x} & 
+	\chordbox{}{x,2,3,x,x,x} & 
+	\chordbox{}{x,x,2,3,x,x} & 
+	\chordbox{}{x,x,x,2,4,x} & 
+	\chordbox{}{x,x,x,x,3,4} &
+	\chordbox{}{5,x,1,x,x,x} &
+	\chordbox{}{x,5,x,1,x,x} &
+	\chordbox{}{x,x,5,x,2,x} & 
+	\chordbox{}{x,x,x,5,x,2} \\ 
+	
 \end{tabular}
 
-\tikzset{chordbox/.append style={scale=.75}}
+\begin{tabular}{lccccccccc}
+	
+	\textbf{P5} & 
+	\chordbox{}{2,4,x,x,x,x} & 
+	\chordbox{}{x,2,4,x,x,x} & 
+	\chordbox{}{x,x,2,4,x,x} & 
+	\chordbox{}{x,x,x,2,5,x} & 
+	\chordbox{}{x,x,x,x,2,4} &
+	\chordbox{}{4,x,1,x,x,x} &
+	\chordbox{}{x,4,x,1,x,x} &
+	\chordbox{}{x,x,4,x,2,x} & 
+	\chordbox{}{x,x,x,4,x,2} \\
+	
+	\textbf{m6} & 
+	\chordbox{}{2,5,x,x,x,x} & 
+	\chordbox{}{x,2,5,x,x,x} & 
+	\chordbox{}{x,x,2,5,x,x} & 
+	\chordbox{}{x,x,x,1,5,x} & 
+	\chordbox{}{x,x,x,x,2,5} &
+	\chordbox{}{3,x,1,x,x,x} &
+	\chordbox{}{x,3,x,1,x,x} &
+	\chordbox{}{x,x,3,x,2,x} & 
+	\chordbox{}{x,x,x,3,x,2} \\
+	
+	\textbf{M6} & 
+	\chordbox{}{1,5,x,x,x,x} & 
+	\chordbox{}{x,1,5,x,x,x} & 
+	\chordbox{}{x,x,1,5,x,x} & 
+	\chordbox{}{x,x,x,0,5,x} & 
+	\chordbox{}{x,x,x,x,1,5} &
+	\chordbox{}{3,x,2,x,x,x} &
+	\chordbox{}{x,3,x,2,x,x} &
+	\chordbox{}{x,x,3,x,3,x} & 
+	\chordbox{}{x,x,x,3,x,3} \\
+	
+	\textbf{m7} & 
+	\chordbox{}{3,x,3,x,x,x} &
+	\chordbox{}{x,3,x,3,x,x} &
+	\chordbox{}{x,x,3,x,4,x} & 
+	\chordbox{}{x,x,x,3,x,4} &&&&& \\
+	
+	\textbf{M7} & 
+	\chordbox{}{3,x,4,x,x,x} &
+	\chordbox{}{x,3,x,4,x,x} &
+	\chordbox{}{x,x,2,x,4,x} & 
+	\chordbox{}{x,x,x,2,x,4} &&&&& \\
+	
+	\textbf{Octave} & 
+	\chordbox{}{2,x,4,x,x,x} &
+	\chordbox{}{x,2,x,4,x,x} &
+	\chordbox{}{x,x,1,x,4,x} & 
+	\chordbox{}{x,x,x,1,x,4} &&&&&
+\end{tabular}
+
+\tikzset{chordbox/.append style={scale=.71}}
 \pgfkeys{/chordbox/.cd, numfrets=4}
 
 \pagebreak
